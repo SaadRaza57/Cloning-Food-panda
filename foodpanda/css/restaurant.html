@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restraunt</title>
+    <link rel="icon" href="css/pandaicon.png">
+    <link rel="stylesheet" href="css/restraunt.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="css/logo.png" alt="">
+        </div>
+        <div class="headerbtn">
+            <button class="loginbtn">login</button>
+            <button class="signup">signup</button>
+        </div>
+    </header>
+
+
+   <!-- sidebar section start -->
+    <section class="sidebar">
+        <div class="options">
+            <h2>Delivery</h2>
+          <button class="toggle" id="toggle" onclick="toggleBtn()"></button>
+            <h2>Pick-up</h2>
+        </div>
+    </section>
+      <!-- sidebar section end -->
+
+
+
+    <!-- banner.section start -->
+    <section class="banner">
+
+    </section>
+     <!-- banner.section end -->
+
+     <!-- restaurant details section sart -->
+     <section class="restaurant">
+         <div class="restaurantdetails">
+         <div class="title">
+             <h2>Student biryani & pakwan center</h2>
+         </div>
+         <div class="rating">
+             <h2><span>&star;</span>4.5/5</h2>
+         </div>
+         <div class="content">
+             <p>$$$ . Non-alcohlic Drinks .Beverages</p>
+         </div>
+        </div>
+        <div class="speciality">
+            <h2>Popular</h2>
+            <h2>Panda combo</h2>
+            <h2>Hot deals</h2>
+            <h2>Side</h2>
+            <h2>Rice</h2>
+            <h2>Beverages</h2>
+            <h2>Desert</h2>
+        </div>
+        <div class="foodtitle">
+            <h2>Popular</h2>
+            <p>Most ordered right now.</p>
+        </div>
+        <div class="fooddetails">
+            <div class="foodcard">
+              <div class="content">
+               <h2>Combo deal 1</h2>  
+               <p>Chicken biryani single & 500ml softdrink</p>
+                <h3>Rs.200</h3>
+              </div>
+             <div class="imgbx"></div>
+            </div>
+            <div class="foodcard">
+                <div class="content">
+                 <h2>Combo deal 2</h2>  
+                 <p>Chicken biryani single & 500ml softdrink</p>
+                  <h3>Rs.200</h3>
+                </div>
+               <div class="imgbx"></div>
+              </div>
+              <div class="foodcard">
+                <div class="content">
+                 <h2>Combo deal 3</h2>  
+                 <p>Chicken biryani single & 500ml softdrink</p>
+                  <h3>Rs.200</h3>
+                </div>
+               <div class="imgbx"></div>
+              </div>
+              <div class="foodcard">
+                <div class="content">
+                 <h2>Combo deal 4</h2>  
+                 <p>Chicken biryani single & 500ml softdrink</p>
+                  <h3>Rs.200</h3>
+                </div>
+               <div class="imgbx"></div>
+              </div>
+        </div>
+     </section>
+     <!-- restaurant details section End -->
+
+  <script>
+      function toggleBtn(){
+          var mybtn =document.getElementById("toggle");
+          mybtn.classList.toggle('active');
+      }
+  </script>
+</body>
+</html>

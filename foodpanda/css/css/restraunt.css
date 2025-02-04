@@ -1,0 +1,246 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none ;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header 
+{
+   width: 100%;
+   padding: 20px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* border-bottom: 1px solid black; */
+}
+header .logo{
+    width: 200px;
+    height: 50px;
+    /* border: 2px solid black; */
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .headerbtn button
+{
+  padding: 5px 20px;
+  border: 2px solid #d70f64;
+  background-color: #fff;
+  color: #d70f64 ;
+  font-weight: 600;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+header .headerbtn button:nth-child(1):hover
+{
+  background-color: #d70f64;
+  color: #fff;
+}
+header .headerbtn button:nth-child(2)
+{
+    background-color: #d70f64;
+    color: #fff;
+}
+header .headerbtn button:nth-child(2):hover
+{
+ background-color: #fff;
+ color: #d70f64;
+}
+.sidebar
+{
+ width: 20%;   
+ height: 100vh;
+ background-color: #eee;
+ position: absolute;
+ right: 0;
+ padding: 8px;
+}
+.sidebar .options
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidebar .options h2
+{
+    font-size: 15px;
+    font-weight: 400;
+}
+.sidebar .options .toggle
+{
+    width: 60px;
+    height: 20px;
+    border: 1px solid #d70f64;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.sidebar .options .toggle::before
+{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -6px;
+    width: 25px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #d70f64;
+    transition-duration: 0.2s;
+}
+.sidebar .options .toggle.active::before
+{
+    left: 37px;
+}
+.banner
+{
+    width: 80%;
+    height: 30vh;
+    background-image: url("Images/Restaurant/banner.webp");
+    background-size: cover;
+}
+.restaurant
+{
+    width: 80%;
+    /* padding: 10px; */
+}
+.restaurantdetails
+{
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.842);
+}
+.restaurantdetails .title
+{
+    width: 100%;
+    padding-left:150px ;
+    padding-bottom: 10px;
+}
+.restaurantdetails .title h2
+{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.restaurantdetails .rating
+{
+    width: 100%;
+    padding-left:150px ;
+    padding-bottom: 10px;
+}
+.restaurantdetails .rating h2
+{
+  font-size: 12px;
+  color: #555;
+
+}
+.restaurantdetails .rating h2 span
+{
+  font-size: 14px;
+  color: #d70f64;
+  margin-right: 5px;
+}
+.restaurantdetails .content
+{
+    width: 100%;
+    padding-left:150px ;
+    padding-bottom: 10px;
+}
+.restaurantdetails .content p
+{
+  font-size: 13px;
+  color: #666;
+}
+.restaurant .speciality
+{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.842);
+}
+.restaurant .speciality h2
+{
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 40px;
+    color: #888;
+}
+.restaurant .foodtitle
+{
+    width: 100%;
+    padding: 5px;
+    margin-top: 100px;
+    padding-left: 164px;
+}
+.restaurant .foodtitle h2
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.restaurant .foodtitle p
+{
+    font-size: 14px;
+    color: #666;
+    text-transform: capitalize;
+}
+.restaurant .fooddetails
+{
+    width: 100%;
+    padding-left: 150px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.restaurant .fooddetails .foodcard
+{
+    width: 300px;
+    padding: 15px;
+    /* border: 1px solid black; */
+    display: flex;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 30%);
+    justify-content: space-between;
+    position: relative;
+    margin-right:10px ;
+    margin-bottom: 25px;
+}
+.restaurant .fooddetails .foodcard::before
+{
+    content: "+";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #d70f64;
+    color: #fff;
+    padding: 0px 7px;
+}
+.restaurant .fooddetails .foodcard .content h2
+{
+   font-size: 1.1em;
+   font-weight: 350;
+}
+.restaurant .fooddetails .foodcard .content p
+{
+   font-size: 14px;
+   font-weight: 300;
+   color: #444;
+}
+.restaurant .fooddetails .foodcard .content h3
+{
+   font-size: 16px;
+    margin-top: 8px;
+}
+.restaurant .fooddetails .foodcard .imgbx
+{
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid #d70f64; */
+    background-image: url("Images/Restaurant/biryani.webp");
+    background-size: cover;
+    background-position: center;
+}
